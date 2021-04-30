@@ -1,0 +1,6 @@
+altgraph==0.17
+click==7.1.2
+pyinstaller==4.3
+pyinstaller-hooks-contrib==2021.1
+pymongo==3.11.3
+redis==3.5.3
