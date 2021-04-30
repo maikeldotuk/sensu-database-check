@@ -4,7 +4,7 @@ builds:
   arch: "amd64"
   annotations:
     io.sensu.bonsai.tags: check, redis, mongo
-  asset_filename: "sensu-database-check-0.0.8.tar.gz"
+  asset_filename: "sensu-database-check-0.0.10.tar.gz"
   sha_filename: "sha512-checksums.txt"
   filter:
   -  "entity.system.os == 'linux'"

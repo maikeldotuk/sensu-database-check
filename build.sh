@@ -8,5 +8,5 @@ mv bin sensu-database-check/
 rm build -r
 rm *.spec
 chmod +x sensu-database-check/bin/*
-tar -C sensu-database-check -cvzf sensu-database-check-0.0.8.tar.gz .
-sha512sum  sensu-database-check-0.0.8.tar.gz | tee sha512-checksums.txt
+tar -C sensu-database-check -cvzf sensu-database-check-0.0.10.tar.gz .
+sha512sum  sensu-database-check-0.0.10.tar.gz | tee sha512-checksums.txt
