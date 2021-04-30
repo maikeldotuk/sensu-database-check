@@ -1,10 +1,10 @@
 # sensu-database-check
 
-This is a very simple Redis check of connectivity written in Python. To make it a single file I used Pyinstaller. 
+This is a very simple Redis, Mariadb and Mongo check of connectivity written in Python. To make it a single file I used Pyinstaller. 
 
 ## Why create another Redis check
 
-The current one I found here doesn't want to work so I created my own. Also I wanted to be able to run simple tests written in Python quickly. But I needed those tests to be able to call to external modules so I ended up using Pyinstaller to make the tests executable. 
+The current ones I found here don't want to work so I created my own. Also I wanted to be able to run simple tests written in Python quickly. But I needed those tests to be able to call to external modules so I ended up using Pyinstaller to make the tests executable. 
 
 If you want to use this repo as blueprint to build your own checks consider that in the build.sh file I use docker to build executables to the same machine specification of the Sensu alpine image. 
 
@@ -14,13 +14,15 @@ If you want to use this repo as blueprint to build your own checks consider that
 sensuctl asset add maikeldotuk/sensu-database-check
 ```
 
-Pass the next environment variables in your check config:
+Pass the next environment variables in your check config (eg: for Redis):
 
 ```
 REDIS_HOST
 REDIS_PORT (if ommited uses default)
 REDIS_PASS 
 ```
+
+To know what to pass to each test check the Python file of each one. They are self-explanatory
 
 ### Example configuration
 
