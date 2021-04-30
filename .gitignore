@@ -1,0 +1,6 @@
+bin
+*tar.gz
+*checksums.txt
+*spec
+*sha512sum.txt
+__pycache__

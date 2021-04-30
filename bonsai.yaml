@@ -1,0 +1,11 @@
+description: "sensu-databases-check"
+builds:
+- platform: "linux"
+  arch: "amd64"
+  annotations:
+    io.sensu.bonsai.tags: check, redis, mongo
+  asset_filename: "sensu-databases-check-0.0.6.tar.gz"
+  sha_filename: "sha512-checksums.txt"
+  filter:
+  -  "entity.system.os == 'linux'"
+  -  "entity.system.arch == 'amd64'"
