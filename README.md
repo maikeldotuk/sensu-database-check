@@ -1,4 +1,4 @@
-# sensu-databases-check
+# sensu-database-check
 
 This is a very simple Redis check of connectivity written in Python. To make it a single file I used Pyinstaller. 
 
@@ -11,7 +11,7 @@ If you want to use this repo as blueprint to build your own checks consider that
 ### To install 
 
 ```
-sensuctl asset add maikeldotuk/sensu-databases-check
+sensuctl asset add maikeldotuk/sensu-database-check
 ```
 
 Pass the next environment variables in your check config:
